@@ -1,0 +1,16 @@
+// write your code here
+var img = new SimpleImage(200,200);
+print(img);
+ for (var pixel of img.values()){
+     var newG = 255 - pixel.getGreen();
+     pixel.setGreen(newG)
+ }
+ for (var pixel of img.values()){
+     var newR = 255 - pixel.getRed();
+     pixel.setRed(newR)
+ }
+ for (var pixel of img.values()){
+     var newB = 255 - pixel.getBlue();
+     pixel.setBlue(newB)
+ }
+     
